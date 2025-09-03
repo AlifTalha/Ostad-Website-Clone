@@ -1,0 +1,338 @@
+.container {
+    padding: 0 15px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 5px;
+    }
+    
+    .header-left {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .header-left ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin: 10px 0;
+    }
+    
+    .header-left ul li {
+        margin: 5px 0;
+    }
+    
+    .header-right {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .search-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+   
+    .demo {
+        width: 100%;
+        padding: 5px;
+    }
+    
+   
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px 10px;
+    }
+    
+    .hero-section h2 {
+        font-size: 24px;
+    }
+    
+    .hero-section div img {
+        max-width: 100%;
+        margin: 5px;
+    }
+    
+    .hero-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Mocku Banner */
+    .mocku-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .mocku-left {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    
+    /* Category Sections */
+    .catagory, .catagory-free, .recorded-catagory {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .catagory-free {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
+    }
+    
+    .catagory-free div {
+        flex: 0 0 auto;
+        margin-right: 10px;
+    }
+    
+    /* Courses Grid */
+    .courses {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .course-card {
+        margin-bottom: 15px;
+    }
+    
+    /* Extra Part */
+    .extra-part {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .extra-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    /* Want Section */
+    .want-left {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Number Section */
+    .number-main {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    /* Testimonial Section */
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Download Section */
+    .download-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .download-left img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-download {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .footer-column {
+        margin: 15px 0;
+    }
+    
+    .footer-image {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    /* Header Section */
+    nav {
+        flex-wrap: wrap;
+    }
+    
+    .header-left {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .header-right {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Courses Grid */
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Category Sections */
+    .catagory {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .catagory-free {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
+    }
+    
+    .catagory-free div {
+        flex: 0 0 auto;
+        margin-right: 10px;
+    }
+    
+    /* Want Section */
+    .want-left {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Number Section */
+    .number-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Testimonial Section */
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Download Section */
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-download {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Courses Grid */
+    .courses {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Category Sections */
+    .catagory {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .catagory-free {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Want Section */
+    .want-left {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Number Section */
+    .number-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Testimonial Section */
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    /* Courses Grid */
+    .courses {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Category Sections */
+    .catagory {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .catagory-free {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+
+@media only screen and (min-width: 1201px) {
+    /* Default styles already in your main CSS */
+}
+
+/* Additional Responsive Utilities */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.course-btn, .btn1 {
+    width: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Fix for category free section on mobile */
+.catagory-free {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+    button, .btn, a {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Prevents iOS zoom on focus */
+        line-height: 1.5;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+}
